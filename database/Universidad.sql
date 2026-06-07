@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS ibero;
+USE ibero;
+
+CREATE TABLE IF NOT EXISTS docentes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(100) NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    area_academica VARCHAR(100) NOT NULL,
+    dedicacion VARCHAR(100) NOT NULL,
+    anios_experiencia INT NOT NULL DEFAULT 0,
+    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,159 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+/* Subtítulo */
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 24px;
+}
+
+/* Contenedor del formulario */
+form {
+  background-color: #16213e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Fila 1 - 5 columnas */
+form > div:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Fila 2 - 2 columnas */
+form > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  font-size: 13px;
+  color: #cccccc;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #0f3460;
+  border: 1px solid #2a2a5a;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+input::placeholder {
+  color: #7a7a9a;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Botón registrar */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #16213e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #0f3460;
+}
+
+th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #aaaaaa;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 13px;
+  border-top: 1px solid #2a2a5a;
+  vertical-align: top;
+}
+
+tr:hover {
+  background-color: #1a2a4a;
+}
+
+/* Botón Editar */
+button.editar {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+button.editar:hover {
+  background-color: #357abd;
+}
+
+/* Botón Eliminar */
+button.eliminar {
+  background-color: #e24a4a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.eliminar:hover {
+  background-color: #bd3535;
+}
